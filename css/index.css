@@ -1,0 +1,62 @@
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: aliceblue;
+    text-shadow: 3px 3px black;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Exo', sans-serif;
+}
+.jugadores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.jugadores__div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.fila{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+}
+.fila__nombre{
+    font-family: 'Exo', sans-serif;
+    font-size: 1.5rem;
+}
+.fila__btnSumar{
+    background-color: green;
+    width: 2rem;
+    height: 2rem;
+}
+.fila__btnRestar{
+    background-color: red;
+    width: 2rem;
+    height: 2rem;
+}
+.resultados{
+    display: none;
+}
+.resultadosSi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.divJugador{
+    display: flex;
+    margin: 5px;
+}
+.divJugador__p{
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
