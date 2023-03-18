@@ -44,7 +44,7 @@ function armarEquipos(array){
         equipo1.map((jugador)=>{
 
             const iconito = document.createElement('img')
-            iconito.setAttribute('src','../estrella.webp')
+            iconito.setAttribute('src','../star.png')
             iconito.setAttribute('alt','estrella logo')
             iconito.setAttribute('class','estrella_logo')
             const divJugador = document.createElement('div')
@@ -62,7 +62,7 @@ function armarEquipos(array){
         equipo2.map((jugador)=>{
 
             const iconito = document.createElement('img')
-            iconito.setAttribute('src','../estrella.webp')
+            iconito.setAttribute('src','../star.png')
             iconito.setAttribute('alt','estrella logo')
             iconito.setAttribute('class','estrella_logo')
             const divJugador = document.createElement('div')
