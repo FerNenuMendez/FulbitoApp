@@ -102,7 +102,16 @@ const bajarArray=()=>{
     console.log(parseoLs)
     let doceSeleccionados = parseoLs
     
-    armarEquipos(doceSeleccionados)
+    armarEquipos(doceSeleccionados.sort(function(a,b){
+      if (a.cal > b.cal) {
+        return -1;
+      }
+      if (a.cal < b.cal) {
+        return 1;
+      }
+      // a must be equal to b
+      return 0;
+    }))
 }
 
 

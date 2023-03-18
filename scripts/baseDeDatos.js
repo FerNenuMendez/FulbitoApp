@@ -129,7 +129,7 @@ const players =[
     {
         id:22,
         nombre: "Tincho",
-        posicion: "atacante",
+        posicion: "defensivo",
         cal: 3,
     },
     {
