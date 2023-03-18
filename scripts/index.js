@@ -42,6 +42,11 @@ function armarEquipos(array){
         tableroResultados.classList.remove('resultados')
         tableroResultados.classList.add('resultadosSi')
         equipo1.map((jugador)=>{
+
+            const iconito = document.createElement('img')
+            iconito.setAttribute('src','../estrella.webp')
+            iconito.setAttribute('alt','estrella logo')
+            iconito.setAttribute('class','estrella_logo')
             const divJugador = document.createElement('div')
             divJugador.setAttribute("class","divJugador")
             const pNombre = document.createElement("p")
@@ -51,10 +56,15 @@ function armarEquipos(array){
             pPosicion.innerText = jugador.posicion
             pPosicion.setAttribute("class", "")
 
-            divJugador.append(pNombre,pPosicion)
+            divJugador.append(iconito,pNombre,pPosicion)
             respEquipo1.append(divJugador)
         })
         equipo2.map((jugador)=>{
+
+            const iconito = document.createElement('img')
+            iconito.setAttribute('src','../estrella.webp')
+            iconito.setAttribute('alt','estrella logo')
+            iconito.setAttribute('class','estrella_logo')
             const divJugador = document.createElement('div')
             divJugador.setAttribute("class","divJugador")
             const pNombre = document.createElement("p")
@@ -64,7 +74,7 @@ function armarEquipos(array){
             pPosicion.innerText = jugador.posicion
             pPosicion.setAttribute("class", "")
 
-            divJugador.append(pNombre,pPosicion)
+            divJugador.append(iconito,pNombre,pPosicion)
             respEquipo2.append(divJugador)
         })
   }
@@ -137,6 +147,7 @@ const jugadoresEnDom = () =>{
         divBtn.append(btn)
     })    
     let btnCrearEquipos = document.createElement('button')
+    btnCrearEquipos.setAttribute('class','btnCrearEquipos')
     btnCrearEquipos.setAttribute('type','button')
     btnCrearEquipos.innerText = 'Crear Equipos'
 

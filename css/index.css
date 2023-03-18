@@ -1,13 +1,42 @@
 body{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 15%, rgba(0,212,255,1) 100%);
+    background-image: url(../fondocompleto.webp);
+    background-position: center;
+    background-size: cover;
     color: aliceblue;
-    text-shadow: 1px 2px black;
+    text-shadow: 1px 1px black;
+}
+.btnCrearEquipos{
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 1px 2px gray;
+    font-family: 'Exo', sans-serif;
+}
+.divJugador{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.divJugador__p{
+    margin: 10px;
+    font-family: 'Exo', sans-serif;
+    font-size: 1rem;
+    text-shadow: 1px 1px goldenrod;
 }
 .header{
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Exo', sans-serif;
+}
+.equipos{
+    margin: 15px;
+}
+.estrella_logo{
+    align-self: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
 }
 .jugadores{
     display: flex;
@@ -20,6 +49,11 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    margin: 5px;
+}
+.jugadores__vs{
+    font-size: larger;
+    text-shadow: 2px 2px red;
 }
 .fila{
     display: flex;
@@ -31,16 +65,23 @@ body{
 .fila__nombre{
     font-family: 'Exo', sans-serif;
     font-size: 1.5rem;
+    margin-left: 1rem;
 }
 .fila__btnSumar{
-    background-color: green;
+    background-color: rgb(21, 203, 21);
+    color: black;
+    font-weight: 900;
     width: 2rem;
     height: 2rem;
+    margin-right: 1rem;
 }
 .fila__btnRestar{
     background-color: red;
+    color: black;
+    font-weight: 900;
     width: 2rem;
     height: 2rem;
+    margin-right: 1rem;
 }
 .resultados{
     display: none;
@@ -50,16 +91,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../fondo2.jpg);
+    background-position: center;
     background-size: cover;
     margin-top: 2rem;
-}
-.divJugador{
-    display: flex;
-    margin: 5px;
-}
-.divJugador__p{
-    margin: 10px;
-    font-family: 'Exo', sans-serif;
-    font-size: 1.5rem;
 }
