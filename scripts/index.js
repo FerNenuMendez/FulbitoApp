@@ -56,7 +56,7 @@ function armarEquipos(array){
             pPosicion.innerText = jugador.posicion
             pPosicion.setAttribute("class", "")
 
-            divJugador.append(iconito,pNombre,pPosicion)
+            divJugador.append(pNombre,pPosicion)
             respEquipo1.append(divJugador)
         })
         equipo2.map((jugador)=>{
@@ -74,7 +74,7 @@ function armarEquipos(array){
             pPosicion.innerText = jugador.posicion
             pPosicion.setAttribute("class", "")
 
-            divJugador.append(iconito,pNombre,pPosicion)
+            divJugador.append(pNombre,pPosicion)
             respEquipo2.append(divJugador)
         })
   }
